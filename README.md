@@ -1,4 +1,2 @@
-# hello-world
-test
-
-Hi, I just made some changes
+Run by the following command
+python my_solution.py
