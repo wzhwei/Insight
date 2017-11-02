@@ -1,2 +1,2 @@
-Run by the following command
+Run by the following command:
 python my_solution.py
