@@ -23,8 +23,8 @@ for i in range(data.shape[0]):
 
         if len(zip) >= 5:
             zip = temp[10][:5]
-            zdic[zip] = zdic.get(zip,[]) + [amount]
-            a = str(id) + '|' + str(zip) + '|' + str(int(np.round(np.median(zdic[zip])))) + '|' + str(len(zdic[zip])) + '|' + str(int(np.sum(zdic[zip]))) + '\n'
+            zdic[(id,zip)] = zdic.get((id,zip),[]) + [amount]
+            a = str(id) + '|' + str(zip) + '|' + str(int(np.round(np.median(zdic[(id,zip)])))) + '|' + str(len(zdic[(id,zip)])) + '|' + str(int(np.sum(zdic[(id,zip)]))) + '\n'
             f1.write(a)
 
         if len(date) == 8:
