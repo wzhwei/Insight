@@ -1,4 +1,5 @@
 This is my solution to the data challenge of finding political donors. 
+
 The details of the challenge can be found in:
 https://github.com/InsightDataScience/find-political-donors
 
