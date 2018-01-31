@@ -14,7 +14,7 @@ for i in range(data.shape[0]):
     temp = data.iloc[i]
     if temp.isnull()[15]:
         id = temp[0]
-        zip = temp[10]
+        zip_code = temp[10]
         date = temp[13]
         amount = float(temp[14])
         
@@ -22,9 +22,9 @@ for i in range(data.shape[0]):
             break
 
         if len(zip) >= 5:
-            zip = temp[10][:5]
-            zdic[(id,zip)] = zdic.get((id,zip),[]) + [amount]
-            a = str(id) + '|' + str(zip) + '|' + str(int(np.round(np.median(zdic[(id,zip)])))) + '|' + str(len(zdic[(id,zip)])) + '|' + str(int(np.sum(zdic[(id,zip)]))) + '\n'
+            zip_code = temp[10][:5]
+            zdic[(id,zip_code)] = zdic.get((id,zip_code),[]) + [amount]
+            a = str(id) + '|' + str(zip) + '|' + str(int(np.round(np.median(zdic[(id,zip_code)])))) + '|' + str(len(zdic[(id,zip_code)])) + '|' + str(int(np.sum(zdic[(id,zip_code)]))) + '\n'
             f1.write(a)
 
         if len(date) == 8:
