@@ -5,6 +5,7 @@ https://github.com/InsightDataScience/find-political-donors
 
 
 Repo structure:
+
 src folder contains my_solution.py
 
 input folder contains a test input
